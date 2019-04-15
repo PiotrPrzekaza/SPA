@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
-const permission = true;
+const permission = false;
 
 const AdminPage = () => {
     return (
         <Route render={() => (
-            permission ? <h3>Panel admina - dzień dobrt</h3> : (
+            permission ? <h3>Panel admina - dzień dobry</h3> : (
                 <Redirect to="/login" />
             )
         )} />
